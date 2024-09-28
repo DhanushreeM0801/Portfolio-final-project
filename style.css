@@ -378,89 +378,84 @@ footer p {
   font-size: 14px;
   color: #555;
 }
-/* Add this CSS at the end of your existing CSS file */
 
 nav .nav-links {
-    display: flex; /* Default display for desktop */
+    display: flex; 
     align-items: center;
     gap: 1rem;
 }
 
 .checkbox {
-    display: none; /* Hide the checkbox */
+    display: none;
 }
 
 .hamburger {
-    display: none; /* Hide hamburger icon by default */
+    display: none; /
     cursor: pointer;
 }
 
 @media (max-width: 768px) {
     nav .nav-links {
-        position: absolute; /* Position links */
-        top: 60px; /* Adjust based on your navbar height */
+        position: absolute; 
+        top: 60px;
         left: 0;
         right: 0;
         background-color: var(--primary-color);
-        flex-direction: column; /* Stack links vertically */
-        display: none; /* Hide by default */
-        z-index: 98; /* Ensure it's above other content */
+        flex-direction: column; 
+        display: none; 
+        z-index: 98; 
     }
 
     .checkbox:checked + .hamburger + .nav-links {
-        display: flex; /* Show links when checkbox is checked */
+        display: flex; 
     }
 
     .hamburger {
-        display: block; /* Show hamburger icon in mobile */
+        display: block;
     }
 
     nav .nav-links li {
-        text-align: center; /* Center align links */
-        padding: 1rem 0; /* Add padding for better touch targets */
+        text-align: center; 
+        padding: 1rem 0; 
     }
     .section {
-        padding: 2rem 1rem; /* Reduce padding for mobile */
-        text-align: center; /* Center text for smaller screens */
+        padding: 2rem 1rem; 
+        text-align: center; 
     }
     .section__container {
         display: flex;
-        flex-direction: column; /* Stack content vertically */
-        align-items: center; /* Center align items */
+        flex-direction: column;
+        align-items: center; 
     }
-
-    /* Image */
     .image {
-        order: -1; /* Move image above the subtitle */
-        margin-bottom: 1rem; /* Add some margin below the image */
+        order: -1; 
+        margin-bottom: 1rem; 
         margin-top: 7%;
     }
-
-    /* About Section */
     .about-section {
-        flex-direction: column; /* Stack content vertically */
-        padding: 20px; /* Adjust padding */
+        flex-direction: column; 
+        padding: 20px; 
     }
 
     .about-section .content-container,
     .about-section .image-container {
-        flex: 1; /* Make containers equal width */
-        padding: 10px; /* Add some padding */
+        flex: 1; 
+        padding: 10px; 
     }
 
     .about-section h2 {
         margin-top: 10%;
-        font-size: 2rem; /* Adjust font size for heading */
-        margin-bottom: 20px; /* Adjust margin */
+        font-size: 2rem;
+        margin-bottom: 20px;
     }
 
     .about-section p {
-        font-size: 1rem; /* Adjust font size for paragraph */
+        font-size: 1rem; 
     }
 
     /* Projects Section */
     .projects {
-        padding: 3rem 1rem; /* Adjust padding for projects section */
+        padding: 3rem 1rem; 
         
     }
     .projects h2{
@@ -468,42 +463,40 @@ nav .nav-links {
     }
 
     .projects__container {
-        display: flex; /* Use flexbox to center the cards */
-        flex-direction: column; /* Stack cards vertically */
+        display: flex;
+        flex-direction: column; 
         align-items: center; 
         margin-left: 0;
-        /* Center align the cards */
     }
 
     .project__card {
-        margin: 1rem 0; /* Add vertical margin for spacing */
-        width: 90%; /* Adjust width of cards to fit well */
+        margin: 1rem 0; 
+        width: 90%;
         max-width: 400px; 
-        /* Optional: Set a max width */
         margin-left: -25%;
     }
     /* Contact Section */
     .contact-section {
         margin-top:2%;
-        padding: 4rem 1rem; /* Adjust padding for contact section */
+        padding: 4rem 1rem;
     }
 
     .contact-title {
-        font-size: 2rem; /* Adjust title font size */
+        font-size: 2rem; 
     }
 
     form.contact-form {
-        padding-left: 10%; /* Adjust left padding */
-        padding-right: 10%; /* Adjust right padding */
+        padding-left: 10%; 
+        padding-right: 10%;
     }
 
     input, textarea {
-        width: calc(100% - 16px); /* Full width inputs with padding */
+        width: calc(100% - 16px);
     }
 
     button {
-        width: 100%; /* Full-width button */
-        margin-top: 10px; /* Adjust margin */
+        width: 100%; 
+        margin-top: 10px; 
     }
 }
 
