@@ -1,0 +1,145 @@
+<html lang="en"></html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"/>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+      
+    <link rel="stylesheet" href="style.css"/>
+    <title>my portfolio</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__content">
+        <div class="logo"><a href="#">Dhanushree</a></div>
+        <input type="checkbox" class="checkbox" id="menuToggle" />
+            <label for="menuToggle" class="hamburger">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul class="nav-links">
+                <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </ul>
+      </div>
+    </nav>
+    <section class="section" id="home">
+      <div class="section__container">
+        <div class="image">
+            <img src="data:image/jpeg;base64,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" alt="profile" />
+          </div>
+        <div class="content">
+          <h4 class="subtitle">Hello, I am</h4>
+          <h1 class="title">Dhanushree</h1>
+          <h3>
+            Welcome to my web developer portofolio! I'm Dhanushree, 
+            "It is the process of planning,designing and implementing the website."
+          </h3>
+        </div>
+        
+      </div>
+    </section>
+    <section class="about-section" id="about">
+        
+        <div class="content-container">
+          <h2>About Me</h2>
+          <p>Hello! I'm a passionate web developer with a love for creating engaging and interactive web applications. My journey in web development started with simple HTML and CSS and has now expanded to full-stack development, including JavaScript frameworks, backend technologies, and responsive design.
+          I am always eager to learn new technologies and improve my skills to deliver high-quality and efficient code. Let's work together to build something amazing!</p>
+          <div class="button-container">
+            <a href="" class="button" download>Download CV</a>
+          </div>
+
+          <div class="button-container">
+            <a href="#contact" class="button">Contact Me</a>
+          </div>
+        </div>
+      </section>
+      
+                <section class="projects" id="projects">
+                    <h2 class="projects__title">My Projects</h2>
+                    <div class="projects__container">
+                        <div class="project__card">
+                            <img src="pro.jpeg" alt="Project 1">
+                            <div class="project__content">
+                                <h3>Electric Vehicle Analysis</h3>
+                                <p>An Electric Vehicle analysis project from 2010 onwards involves a comprehensive examination of the electric vehicle market,focusing on key performance indicators to understand trends and patterns.</p>
+                                <a href="Electric Vehicle Story (2).pdf" class="project__link">View Project</a>
+                            </div>
+                        </div>
+                        <div class="project__card">
+                            <img src="pro2.png" alt="Project 2">
+                            <div class="project__content">
+                                <h3>Registration Login form</h3>
+                                <p>This HTML code consists of two main sections: a login form and a registration form. Both forms allow users to interact with a website by either signing in (if they already have an account) or creating a new account.</p>
+                                <a href="https://dhanushreem0801.github.io/Task-4-js-working/" class="project__link">View Project</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                  <div class="contact-section" id="contact">
+                    <h2 class="contact-title" style="color: #e080e4;">CONTACT ME</h2>
+                      <p>
+                          I enjoy working with dedicated creatives from businesses that make the world beautiful.<br>
+                          We can do so much together. Let's talk.<br><br>
+                          If you want to mail: <a href="dhanushree0801@gmail.com" style="color:#0082ca;">dhanushree0801@gmail.com</a><br>
+                          If you want to hear my voice: <a href="6383193733" style="color: #0082ca;">6383193733</a><br>
+                      </p>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="firstName" placeholder="First Name" required>
+                        <input type="text" id="lastName" placeholder="Last Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Email" required>
+                        <input type="tel" id="phone" placeholder="Phone" required>
+                    </div>
+                    <textarea id="message" placeholder="Type your message here..." required></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+        <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            const firstName = document.getElementById("firstName").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const lastName = document.getElementById("lastName").value.trim();
+            const phone = document.getElementById("phone").value.trim();
+            const message = document.getElementById("message").value.trim();
+            
+        if (firstName === "" || email === "" || message === "" || lastName === "" || phone ==="" ) {
+            alert("All fields are required.");
+            return;
+          }
+          const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+          if (!email.match(emailPattern)) {
+            alert("Please enter a valid email address.");
+            return;
+          }
+          alert("Thank you , Your message has been sent.");
+        });   
+        
+        function toggleMenu() {
+            document.getElementById('menuToggle').checked = false; // Close the menu on click
+        }
+    
+         </script>       
+                                 
+  </body>
+  <footer>
+    <div class="footer-content">
+      <div class="social-icons">
+        <a href="https://github.com/dhanushreem0801" target="_blank"><i class="fab fa-github fa-2x" style="color: #333333;"></i>
+        <a href="https://instagram.com/sri_nu_tha" target="_blank"><i class="fab fa-instagram fa-2x" style="color: #ac2bac;"></i>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin-in fa-2x" style="color: #0082ca;"></i>
+        <a href="https://wa.me/yourwhatsappnumber" target="_blank"><i class="fab fa-whatsapp fa-2x" style="color: #25d366;"></i>
+    </div>
+    <p>&copy; 2024 dhanushree. All rights reserved.</p>
+ </div>
+ </footer>
+</html>
